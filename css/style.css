@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Slabo;
+  src: url("../font/Slabo_27px/Slabo27px-Regular.ttf");
+}
+@font-face {
+  font-family: Open-sans;
+  src: url("../font/Open_Sans/OpenSans-Regular.ttf");
+}
+
+:root {
+  --bg-header: #25b3b4;
+  --text-color: #454a54;
+  --todays-color: #2b9aa0;
+  --bg-section2: #b6dedc;
+}
+
+body {
+  margin: 0;
+  background-image: url("../img/fond.png");
+}
+
+/* -------------------------------------
+            Header
+--------------------------------------*/
+
+header {
+  background-color: var(--bg-header);
+  border-top: 4px solid var(--todays-color);
+  border-bottom: 4px solid var(--todays-color);
+  margin-top: 65px;
+  text-align: center;
+}
+nav,
+h1,
+h2,
+h3,
+h4 {
+  font-family: Slabo;
+}
+nav > ul > li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+  padding: 10px 20px;
+}
