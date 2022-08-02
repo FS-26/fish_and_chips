@@ -8,10 +8,10 @@
 }
 
 :root {
-  --bg-header: #25b3b4;
+  --primary: #25b3b4;
   --text-color: #454a54;
-  --todays-color: #2b9aa0;
-  --bg-section2: #b6dedc;
+  --secondary: #2b9aa0;
+  --third: #b6dedc;
 }
 
 body {
@@ -24,17 +24,16 @@ body {
 --------------------------------------*/
 
 header {
-  background-color: var(--bg-header);
-  border-top: 4px solid var(--todays-color);
-  border-bottom: 4px solid var(--todays-color);
+  background-color: var(--primary);
+  border-top: 4px solid var(--secondary);
+  border-bottom: 4px solid var(--secondary);
   margin-top: 65px;
   text-align: center;
 }
 nav,
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: Slabo;
 }
 nav > ul > li {
@@ -46,4 +45,133 @@ nav a {
   color: white;
   font-size: 27px;
   padding: 10px 20px;
+}
+p {
+  color: var(--text-color);
+  font-family: Open-sans;
+}
+/* -------------------------------------
+            Main
+--------------------------------------*/
+main {
+  min-width: 800px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#section1 {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+#section1 h1 {
+  font-size: 2.5em;
+  font-weight: 100;
+}
+
+#section2 {
+  background-color: var(--third);
+  width: 69%;
+  padding: 40px 0;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#section2 h2 {
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: 200;
+  margin: 10px;
+}
+
+#section2 span {
+  color: var(--secondary);
+}
+
+#section2 h3 {
+  font-weight: 200;
+  font-size: 1.8em;
+}
+#section2 h3 > i {
+  color: var(--secondary);
+}
+#section2 article {
+  width: 43%;
+  display: inline-block;
+  padding: 0px 20px;
+  vertical-align: top;
+  overflow: auto;
+  clear: both;
+}
+
+#section2 img {
+  float: left;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#section2 p {
+  text-align: left;
+}
+
+#section2 button {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 10px;
+  float: right;
+}
+
+aside {
+  display: inline-block;
+  width: 27%;
+  vertical-align: top;
+  background-color: var(--primary);
+  color: white;
+  border: 4px solid var(--secondary);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 15px;
+  position: relative;
+}
+aside p {
+  color: white;
+  margin-top: 0px;
+}
+aside > h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+aside h4 {
+  margin-bottom: 0;
+}
+
+aside h4,
+aside > h3 > span {
+  color: var(--third);
+}
+
+aside img {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+
+/* -------------------------------------
+            Footer
+--------------------------------------*/
+
+footer {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+footer img {
+  width: 50px;
+}
+footer p {
+  margin-top: 0;
+  font-size: 0.8em;
 }
